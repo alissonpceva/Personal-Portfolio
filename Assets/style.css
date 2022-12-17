@@ -2,8 +2,7 @@
     font-family: 'passionsconflict-regular';
     src: url(fonts/PassionsConflict-Regular.ttf);
 } 
-* {
-    box-sizing: border-box;
+.body {
     padding: 0;
     margin: 5px;    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,16 +29,18 @@
         display: inline-block;
         margin-left: 25px;
 }
-
+ 
 .name {
     font-family: 'passionsconflict-regular', cursive, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
+    margin-top: 1px;
+    color: #ffffff;
+    text-shadow: 0 0 0.35em #1da9cc;
     
 }
 .description {
-        width: 75%;
-        display:flex 
+        width: 65%;
         flex-wrap: wrap;
         }
 
@@ -48,7 +49,7 @@
     float: left;
     margin-left: 100px;
     margin-bottom: 50px;
-    padding: 20px;
+    padding:10px;
     height: 150px;
 }
 
@@ -56,17 +57,38 @@
     display: inline-flex;
     float: right;
     margin-left: 200px;
-    margin-bottom: 250px;
-    padding: 20px;
+    margin-bottom: 70px;
+    padding: 10px;
     height: 150px; 
 }
 
-.code-img {
+.code-img,
+.corals-img {
     background-color: transparent;
     border-radius: 25%;
+    padding: 10px;
 }
 
-.corals-img {
-    border-radius: 25%;
-    box-shadow: 10px;
+.footer {  
+    font-size: 15px;
+    position:absolute
+    bottom:0;
+    margin-bottom: 1px;
+    align-items: center;
+    width:100%;
+    display: flex;
+    flex-direction: column;
 }
+
+@media only screen and (max-width: 500px) {
+    .display-desktop {
+      display: none;
+    }
+    .display-mobile {
+      display: block;
+    }
+    .flex-column-mobile {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
