@@ -1,4 +1,7 @@
- 
+@font-face {
+    font-family: 'passionsconflict-regular';
+    src: url(fonts/PassionsConflict-Regular.ttf);
+} 
 * {
     box-sizing: border-box;
     padding: 0;
@@ -28,37 +31,42 @@
         margin-left: 25px;
 }
 
-
+.name {
+    font-family: 'passionsconflict-regular', cursive, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    
+}
 .description {
         width: 75%;
-        display:flex
-        
-}
+        display:flex 
+        flex-wrap: wrap;
+        }
 
 .learning-code {
+    display: inline-flex;
     float: left;
-    margin-left: 200px;
-        margin-bottom: 200px;
-        padding: 50px;
-        height: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: 150px;
 }
 
 .love-ocean {
+    display: inline-flex;
     float: right;
     margin-left: 200px;
-        margin-bottom: 200px;
-        padding: 50px;
-        height: 100px;
-
-    
+    margin-bottom: 250px;
+    padding: 20px;
+    height: 150px; 
 }
 
-.footer {
-    padding-top: 25px;
-    clear: both;
-    text-align: bottom;
-    font-size: 15px;
+.code-img {
+    background-color: transparent;
+    border-radius: 25%;
 }
 
-
-
+.corals-img {
+    border-radius: 25%;
+    box-shadow: 10px;
+}
