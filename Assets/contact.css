@@ -1,0 +1,62 @@
+* {
+    background-color: #8fddebea;
+}
+
+
+  form#contact-form {
+    max-width: 600px;
+    margin: 20px auto 50px;
+  }
+  
+  .form-row {
+    margin-bottom: 10px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 1.4em;
+    margin: 0 0 3px 2px;
+  }
+  
+  .form-input__text {
+    font-size: 1.2em;
+    height: 40px;
+    width: 100%;
+    transition: border-color .2s ease-in-out;
+    padding: 8;
+  }
+  
+  textarea.form-input__text {
+    height: auto;
+  }
+  
+  .form-input__text:focus {
+    border-color: rgb(146, 216, 76);
+  }
+  
+  .form-input__checkbox {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .form-input__checkbox + .form-label {
+    color: red;
+    display: inline;
+  }
+  
+  .form-input__checkbox:checked + .form-label {
+    color: green;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .display-desktop {
+      display: none;
+    }
+    .display-mobile {
+      display: block;
+    }
+    .flex-column-mobile {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
